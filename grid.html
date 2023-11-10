@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+
+    <style>
+
+    /* Grid */
+.grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 50px);
+height: 800px;
+background-color: palevioletred;
+}
+
+.stretch {
+grid-template-columns: auto;
+align-content: stretch;
+}
+
+/* Grid Item */
+.item-1 {
+grid-row: span 5;
+grid-column: span 3;
+background-image: url(img/img01.jpg);
+margin: 5px;
+text-align: center;
+font-size: 1.5em;
+}
+.item-2 {
+grid-row: span 4;
+grid-column: span 3;
+background-image: url(img/img02.jpg);
+margin: 5px;
+text-align: center;
+font-size: 1.5em;
+}
+.item-3 {
+grid-row: span 5;
+grid-column: span 2;
+background-image: url(img/img03.jpg);
+margin: 5px;
+text-align: center;
+font-size: 1.5em;
+}
+.item-4 {
+grid-row: span 11;
+grid-column: span 8;
+margin: 5px;
+background-image: url(img/img04.jpg);
+text-align: center;
+font-size: 1.5em;
+}
+.item-5 {
+grid-row: span 10;
+grid-column: span 4;
+background-image: url(img/img05.jpg);
+margin: 5px;
+text-align: center;
+font-size: 1.5em;
+}
+.item-6 {
+grid-row: span 9;
+grid-column: span 4;
+background-image: url(img/img06.jpg);
+margin: 5px;
+text-align: center;
+font-size: 1.5em;
+}
+.item-7 {
+grid-row: span 10;
+grid-column: span 8;
+background-image: url(img/img07.jpg);
+margin: 5px;
+text-align: center;
+font-size: 1.5em;
+}
+.item-8 {
+grid-row: span 12;
+grid-column: span 2;
+margin: 5px;
+background-image: url(img/img08.jpg);
+text-align: center;
+font-size: 1.5em;
+}
+.item-9 {
+grid-row: span 11;
+grid-column: span 3;
+background-image: url(img/img09.jpg);
+margin: 5px;
+text-align: center;
+font-size: 1.5em;
+}
+.item-10 {
+grid-row: span 12;
+grid-column: span 3;
+margin: 5px;
+background-image: url(img/img10.jpg);
+text-align: center;
+font-size: 1.5em;
+}
+
+.grid {
+max-width: 1000px;
+margin: 0 auto;
+border: 3px solid pink;
+}
+
+h1 {
+text-align: center;
+font-size: 2em;
+font-weight: normal;
+color: pink;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+padding-bottom: 60px;
+margin: 0px;
+padding: 40px 0;
+}
+
+    </style>
+
+    </head>
+    <body>
+        
+<div>
+<h1>10 PRINCIPAIS PRODUTOS PARA ARRASAR NA MAKE</h1>
+<section class="grid stretch">
+<div class="item-1"></div>
+<div class="item-2"></div>
+<div class="item-3"></div>
+<div class="item-4"></div>
+<div class="item-5"></div>
+<div class="item-6"></div>
+<div class="item-7"></div>
+<div class="item-8"></div>
+<div class="item-9"></div>
+<div class="item-10"></div>
+</section>
+</div>
+        
+</body>
+</html>
